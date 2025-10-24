@@ -1,3 +1,6 @@
+import { RouterProvider } from "react-router/dom";
+import AppRoutes from "../services/routes/AppRoutes";
+
 export default function App() {
-    return <h1>Hello, world! Prostoretail :^)</h1>;
+    return <RouterProvider router={AppRoutes} />;
 }
