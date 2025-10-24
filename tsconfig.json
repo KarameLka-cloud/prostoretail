@@ -25,6 +25,7 @@
         "paths": {
             "@/*": ["./resources/js/*"],
             "~/*": ["./*"]
+            // "@styles": ["./resources/js/styles/*"],
         }
     },
     "include": [

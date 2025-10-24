@@ -11,6 +11,16 @@ export default defineConfig({
         }),
         react(),
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `
+                    @import "@/styles/variables.scss";
+                    @import "@/styles/mixins";
+                `,
+            },
+        },
+    },
     resolve: {
         alias: {
             "@": resolve(__dirname, "resources/js"),
