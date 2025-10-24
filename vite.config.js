@@ -6,7 +6,7 @@ import { resolve } from "path";
 export default defineConfig({
     plugins: [
         laravel({
-            input: ["resources/css/app.css", "resources/js/main.jsx"],
+            input: ["resources/js/main.tsx"],
             refresh: true,
         }),
         react(),
@@ -15,26 +15,26 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 additionalData: `
-                    @import "@/styles/variables";
-                    @import "@/styles/mixins";
+                    @import "@styles/variables";
+                    @import "@styles/mixins";
                 `,
             },
         },
     },
     resolve: {
         alias: {
-            "@": "/resources/js",
-            "@assets": "/resources/js/assets",
-            "@components": "/resources/js/components",
-            "@constants": "/resources/js/constants",
-            "@hooks": "/resources/js/hooks",
-            "@layouts": "/resources/js/layouts",
-            "@pages": "/resources/js/pages",
-            "@routes": "/resources/js/services/routes",
-            "@services": "/resources/js/services",
-            "@styles": "/resources/js/styles",
-            "@types": "/resources/js/types",
-            "@utils": "/resources/js/utils",
+            "@": resolve(__dirname, "resources/js"),
+            "@assets": resolve(__dirname, "resources/js/assets"),
+            "@components": resolve(__dirname, "resources/js/components"),
+            "@constants": resolve(__dirname, "resources/js/constants"),
+            "@hooks": resolve(__dirname, "resources/js/hooks"),
+            "@layouts": resolve(__dirname, "resources/js/layouts"),
+            "@pages": resolve(__dirname, "resources/js/pages"),
+            "@routes": resolve(__dirname, "resources/js/services/routes"),
+            "@services": resolve(__dirname, "resources/js/services"),
+            "@styles": resolve(__dirname, "resources/js/styles"),
+            "@types": resolve(__dirname, "resources/js/types"),
+            "@utils": resolve(__dirname, "resources/js/utils"),
         },
     },
 });
