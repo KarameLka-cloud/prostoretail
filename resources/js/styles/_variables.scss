@@ -1,22 +1,28 @@
-// Colors
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
-$text-color: #333;
-$background-color: #f8f9fa;
+// // Colors
+// $primary-color: #3498db;
+// $secondary-color: #2ecc71;
+// $text-color: #333;
+// $background-color: #f8f9fa;
 
-// Typography
-$font-family: 'Inter', sans-serif;
-$font-size-base: 16px;
-$line-height-base: 1.5;
-
-// Spacing
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
+// // Spacing
+// $spacing-xs: 4px;
+// $spacing-sm: 8px;
+// $spacing-md: 16px;
+// $spacing-lg: 24px;
+// $spacing-xl: 32px;
 
 // Breakpoints
 $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1024px;
 $breakpoint-desktop: 1200px;
+
+// Typography
+$font-family: sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Colors
+$primary-color: #16b0bf;
+$text-color-dark: #333;
+$text-color-light: #fff;
+$background-color-dark: #333;

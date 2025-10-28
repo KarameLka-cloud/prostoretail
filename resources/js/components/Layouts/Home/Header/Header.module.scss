@@ -1,0 +1,86 @@
+.header {
+    &__content {
+        width: $breakpoint-desktop;
+        margin: 0 auto;
+    }
+
+    &_top {
+        &__content {
+            display: flex;
+            align-items: center;
+            padding: 0.6rem 0;
+        }
+
+        &__link {
+            color: $text-color-dark;
+            font-weight: 600;
+
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+        }
+
+        &__phone {
+            margin-left: auto;
+            color: $text-color-dark;
+            font-size: 1.5rem;
+        }
+
+        &__link__icon {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &_main {
+        &__content {
+            display: flex;
+            align-items: center;
+            padding: 2rem 1rem;
+            background-color: $background-color-dark;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        &__logo {
+            height: 4rem;
+            padding: 0 8rem;
+            background-color: aquamarine;
+        }
+
+        &__link {
+            color: $text-color-light;
+            font-size: 1.4rem;
+            transition: color 0.2s ease-in-out;
+
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        &__catalog {
+            margin-left: 1rem;
+            color: $text-color-light;
+            padding: 0.6rem 0.6rem;
+            border: 1px solid $text-color-light;
+            border-radius: 0.4rem;
+            transition: color 0.2s ease-in-out, border 0.2s ease-in-out,
+                background-color 0.2s ease-in-out;
+
+            &:hover {
+                border: 1px solid $primary-color;
+                background-color: $primary-color;
+            }
+        }
+
+        &__cart {
+            margin-left: auto;
+
+            &__icon {
+                height: 36px;
+            }
+        }
+    }
+}
