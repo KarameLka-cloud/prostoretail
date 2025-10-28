@@ -1,14 +1,11 @@
 .header {
-    &__content {
-        width: $breakpoint-desktop;
-        margin: 0 auto;
-    }
-
     &_top {
         &__content {
             display: flex;
             align-items: center;
-            padding: 0.6rem 0;
+            width: $breakpoint-desktop;
+            padding: 0.3rem 0;
+            margin: 0 auto;
         }
 
         &__link {
@@ -23,21 +20,25 @@
         &__phone {
             margin-left: auto;
             color: $text-color-dark;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         &__link__icon {
-            margin-left: 1.5rem;
+            width: 26px;
+            height: 26px;
+            margin-left: 0.4rem;
         }
     }
 
     &_main {
+        background-color: $background-color-dark;
+
         &__content {
             display: flex;
             align-items: center;
-            padding: 2rem 1rem;
-            background-color: $background-color-dark;
-            border-radius: 0 0 1rem 1rem;
+            width: $breakpoint-desktop;
+            padding: 1.6rem 1rem;
+            margin: 0 auto;
         }
 
         &__logo {
@@ -48,7 +49,7 @@
 
         &__link {
             color: $text-color-light;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             transition: color 0.2s ease-in-out;
 
             &:not(:first-child) {
@@ -61,13 +62,23 @@
         }
 
         &__catalog {
-            margin-left: 1rem;
-            color: $text-color-light;
+            display: flex;
+            align-items: center;
             padding: 0.6rem 0.6rem;
+            margin-left: 1rem;
             border: 1px solid $text-color-light;
             border-radius: 0.4rem;
+            color: $text-color-light;
             transition: color 0.2s ease-in-out, border 0.2s ease-in-out,
                 background-color 0.2s ease-in-out;
+
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                margin-right: 0.6rem;
+                background-image: url("@assets/icons/folder.svg");
+            }
 
             &:hover {
                 border: 1px solid $primary-color;
@@ -79,7 +90,7 @@
             margin-left: auto;
 
             &__icon {
-                height: 36px;
+                height: 30px;
             }
         }
     }

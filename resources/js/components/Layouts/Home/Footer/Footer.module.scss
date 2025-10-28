@@ -1,7 +1,10 @@
 .footer {
+    background-color: $background-color-dark;
+
     &__content {
+        display: flex;
         width: $breakpoint-desktop;
         margin: 0 auto;
-        background-color: cadetblue;
+        color: $text-color-light;
     }
 }

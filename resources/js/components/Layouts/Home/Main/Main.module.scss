@@ -2,6 +2,20 @@
     &__content {
         width: $breakpoint-desktop;
         margin: 0 auto;
-        background-color: aquamarine;
+    }
+
+    &__slider {
+        padding: 2rem 1rem;
+        border: 1px solid red;
+    }
+
+    &__section {
+        padding: 2rem 1rem;
+        border: 1px solid green;
+    }
+
+    &__hit {
+        padding: 2rem 1rem;
+        border: 1px solid blue;
     }
 }
