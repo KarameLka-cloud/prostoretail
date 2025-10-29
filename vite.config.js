@@ -30,7 +30,7 @@ export default defineConfig({
             "@hooks": resolve(__dirname, "resources/js/hooks"),
             "@layouts": resolve(__dirname, "resources/js/layouts"),
             "@pages": resolve(__dirname, "resources/js/pages"),
-            "@routes": resolve(__dirname, "resources/js/services/routes"),
+            "@routes": resolve(__dirname, "resources/js/routes"),
             "@services": resolve(__dirname, "resources/js/services"),
             "@styles": resolve(__dirname, "resources/js/styles"),
             "@types": resolve(__dirname, "resources/js/types"),
