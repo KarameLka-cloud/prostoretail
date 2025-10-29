@@ -33,14 +33,14 @@
 // }
 
 // Default theme
-@import "@splidejs/react-splide/css";
+@use "@splidejs/react-splide/css";
 
 // or other themes
-@import "@splidejs/react-splide/css/skyblue";
-@import "@splidejs/react-splide/css/sea-green";
+@use "@splidejs/react-splide/css/skyblue";
+@use "@splidejs/react-splide/css/sea-green";
 
 // or only core styles
-@import "@splidejs/react-splide/css/core";
+@use "@splidejs/react-splide/css/core";
 
 * {
     margin: 0;

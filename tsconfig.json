@@ -31,7 +31,7 @@
             "@hooks/*": ["resources/js/hooks/*"],
             "@layouts/*": ["resources/js/layouts/*"],
             "@pages/*": ["resources/js/pages/*"],
-            "@routes/*": ["resources/js/services/routes/*"],
+            "@routes/*": ["resources/js/routes/*"],
             "@services/*": ["resources/js/services/*"],
             "@styles/*": ["resources/js/styles/*"],
             "@types/*": ["resources/js/types/*"],

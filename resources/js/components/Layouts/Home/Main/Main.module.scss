@@ -4,17 +4,53 @@
         margin: 0 auto;
     }
 
-    &__slider {
-        // padding: 2rem 1rem;
+    &__section {
+        margin-top: 1rem;
     }
 
-    &__section {
-        // padding: 2rem 1rem;
-        border: 1px solid green;
+    &__slider {
+        &__image {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    &__goods {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 19%;
+            padding: 1rem 1rem 6rem;
+            border: 1px solid red;
+        }
     }
 
     &__hit {
-        // padding: 2rem 1rem;
-        border: 1px solid blue;
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 16%;
+            padding: 1rem 1rem 6rem;
+            border: 1px solid red;
+        }
+    }
+
+    &__news {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 24%;
+            padding: 1rem 1rem 6rem;
+            border: 1px solid green;
+        }
     }
 }

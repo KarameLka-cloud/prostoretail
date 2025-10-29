@@ -37,11 +37,12 @@
             display: flex;
             align-items: center;
             width: $breakpoint-desktop;
-            padding: 1.6rem 1rem;
+            padding: 1.6rem 0;
             margin: 0 auto;
         }
 
         &__logo {
+            display: block;
             height: 4rem;
             padding: 0 8rem;
             background-color: aquamarine;

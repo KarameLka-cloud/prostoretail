@@ -1,0 +1,12 @@
+.header_page {
+    width: fit-content;
+    background: linear-gradient(
+        90deg,
+        $text-color-red 0%,
+        $text-color-blue 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+}
