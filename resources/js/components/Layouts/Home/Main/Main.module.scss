@@ -1,6 +1,6 @@
 .main {
     &__content {
-        width: $breakpoint-desktop;
+        max-width: $breakpoint-desktop;
         margin: 0 auto;
     }
 

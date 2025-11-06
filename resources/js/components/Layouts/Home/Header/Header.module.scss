@@ -3,7 +3,7 @@
         &__content {
             display: flex;
             align-items: center;
-            width: $breakpoint-desktop;
+            max-width: $breakpoint-desktop;
             padding: 0.3rem 0;
             margin: 0 auto;
         }
@@ -36,7 +36,7 @@
         &__content {
             display: flex;
             align-items: center;
-            width: $breakpoint-desktop;
+            max-width: $breakpoint-desktop;
             padding: 1.6rem 0;
             margin: 0 auto;
         }
