@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router";
 import { ROUTES } from "@constants/routes";
-import HomeLayout from "@/layouts/HomeLayout";
-import AdminLayout from "@/layouts/AdminLayout";
+import HomeLayout from "@layouts/HomeLayout";
+import AdminLayout from "@layouts/AdminLayout";
 import Home from "@pages/Home/Home";
-import Admin from "@/pages/Admin/Admin";
-import Guarantee from "@/pages/Home/Services/Guarantee";
-import Credit from "@/pages/Home/Services/Credit";
-import Contacts from "@/pages/Home/Services/Contacts";
-import About from "@/pages/Home/Services/About";
+import Admin from "@pages/Admin/Admin";
+import Guarantee from "@pages/Home/Services/Guarantee";
+import Credit from "@pages/Home/Services/Credit";
+import Contacts from "@pages/Home/Services/Contacts";
+import About from "@pages/Home/Services/About";
 
 const router = createBrowserRouter([
     {

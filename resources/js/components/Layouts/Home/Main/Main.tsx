@@ -1,5 +1,5 @@
 import styles from "./Main.module.scss";
-import HeaderPage from "@/components/ui/HeaderPage/HeaderPage";
+import HeaderPage from "@components/ui/HeaderPage/HeaderPage";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 // import image_1 from "@assets/images/slider/image_1.jpeg";
 // import image_2 from "@assets/images/slider/image_2.jpeg";

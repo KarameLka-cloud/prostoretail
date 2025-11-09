@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import icon_telegram from "@assets/icons/telegram.svg";
 import icon_whatsapp from "@assets/icons/whatsapp.svg";
 import icon_cart from "@assets/icons/cart.svg";
-import { HEADER_TOP_LINKS, HEADER_MAIN_LINKS } from "@/constants/navigation";
+import { HEADER_TOP_LINKS, HEADER_MAIN_LINKS } from "@constants/navigation";
 import { Link } from "react-router";
 
 interface HeaderType {
