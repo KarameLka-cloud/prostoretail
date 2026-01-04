@@ -1,5 +1,6 @@
-import styles from "./App.module.scss";
+import { RouterProvider } from "react-router-dom";
+import router from "@routes/AppRoutes";
 
 export default function App() {
-    return <p className={styles.parag}>React JS</p>;
+    return <RouterProvider router={router} />;
 }

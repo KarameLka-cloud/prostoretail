@@ -1,0 +1,11 @@
+.main {
+    margin: 0 auto;
+
+    &_content {
+        margin: 0 10px;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+        max-width: $breakpoint-xxl;
+    }
+}

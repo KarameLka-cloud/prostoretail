@@ -1,0 +1,11 @@
+.footer {
+    margin: 0 auto;
+
+    &_content {
+        padding: 0 10px;
+    }
+
+    @media (min-width: $breakpoint-xxl) {
+        max-width: $breakpoint-xxl;
+    }
+}

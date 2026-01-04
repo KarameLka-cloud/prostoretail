@@ -16,8 +16,8 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 additionalData: `
-                    @use "@/styles/_variables" as *;
-                    @use "@/styles/_mixins" as *;
+                    @use "@styles/_variables" as *;
+                    @use "@styles/_mixins" as *;
                 `,
             },
         },
@@ -25,6 +25,14 @@ export default defineConfig({
     resolve: {
         alias: {
             "@": "/resources/js",
+            "@assets": "/resources/js/assets",
+            "@components": "/resources/js/components",
+            "@constants": "/resources/js/constants",
+            "@interfaces": "/resources/js/interfaces",
+            "@layouts": "/resources/js/layouts",
+            "@pages": "/resources/js/pages",
+            "@routes": "/resources/js/routes",
+            "@styles": "/resources/js/styles",
         },
     },
 });
