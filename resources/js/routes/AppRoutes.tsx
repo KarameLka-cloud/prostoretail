@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { HOME_ROUTES, ADMIN_ROUTES } from "@constants/routes";
 import HomeLayout from "@layouts/HomeLayout/HomeLayout";
 import AdminLayout from "@layouts/AdminLayout/AdminLayout";
+import Home from "@pages/Home/Home/Home";
 
 const router = createBrowserRouter([
     {
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: HOME_ROUTES.ROOT,
-                element: <div>Home Page</div>,
+                element: <Home />,
             },
             {
                 path: HOME_ROUTES.CATALOG,

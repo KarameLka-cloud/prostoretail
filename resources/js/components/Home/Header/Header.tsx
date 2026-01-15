@@ -1,12 +1,13 @@
 import styles from "./Header.module.scss";
 import telegram from "@assets/icons/telegram.svg";
-import logo from "@assets/images/logo.jpg";
+import logo_img from "@assets/images/logo.jpg";
 import basket from "@assets/icons/basket.svg";
 import burger from "@assets/icons/burger.svg";
 import profile from "@assets/icons/profile.svg";
-import { NavLinkType } from "@/types/NavLinkType";
+import NavLinkType from "@/types/NavLink.types";
 import { HOME_ROUTES } from "@constants/routes";
-import { HEADER_TOP_LINKS, HEADER_NAV_LINKS } from "@/constants/navigation";
+import { HEADER_TOP_LINKS, HEADER_NAV_LINKS } from "@constants/navigation";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -17,13 +18,13 @@ export default function Header() {
                     <div className={styles.header_top__links}>
                         {HEADER_TOP_LINKS.map(
                             ({ id, name, url }: NavLinkType) => (
-                                <a
-                                    href={url}
+                                <NavLink
+                                    to={url}
                                     key={id}
                                     className={styles.header_top__link}
                                 >
                                     {name}
-                                </a>
+                                </NavLink>
                             )
                         )}
                     </div>
@@ -46,7 +47,7 @@ export default function Header() {
                 <div className={styles.header_info}>
                     <a href={HOME_ROUTES.ROOT}>
                         <img
-                            src={logo}
+                            src={logo_img}
                             alt="Logo"
                             className={styles.header_info__logo}
                         />
@@ -78,13 +79,13 @@ export default function Header() {
                     <div className={styles.header_nav__links}>
                         {HEADER_NAV_LINKS.map(
                             ({ id, name, url }: NavLinkType) => (
-                                <a
-                                    href={url}
+                                <NavLink
+                                    to={url}
                                     key={id}
                                     className={styles.header_nav__link}
                                 >
                                     {name}
-                                </a>
+                                </NavLink>
                             )
                         )}
                     </div>

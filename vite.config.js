@@ -28,11 +28,11 @@ export default defineConfig({
             "@assets": "/resources/js/assets",
             "@components": "/resources/js/components",
             "@constants": "/resources/js/constants",
-            "@interfaces": "/resources/js/interfaces",
             "@layouts": "/resources/js/layouts",
             "@pages": "/resources/js/pages",
             "@routes": "/resources/js/routes",
             "@styles": "/resources/js/styles",
+            "@types": "/resources/js/types",
         },
     },
 });
