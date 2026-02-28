@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: mysql
+    image: mysql:8
+    restart: always
+    # command: --default-authentication-plugin=mysql_native_password
+    environment:
+      # MYSQL_DATABASE: prostoretail
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    # env_file:
+    # - .env
+    ports:
+      # - "${PORT_FRONTEND}:${PORT_FRONTEND}"
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules # Чтобы локальные node_modules не перезаписывали контейнерные
+      - /app/.next # Ускоряет повторные запуски
+    environment:
+      - WATCHPACK_POLLING=true # Обязательно для Windows/macOS, чтобы Hot Reload работал
+      - NEXT_TELEMETRY_DISABLED=1
+    depends_on:
+      - backend
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      # - .env
+      - ./backend/.env
+    ports:
+      # - "${PORT_BACKEND}:3000"
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      # DATABASE_URL: "mysql://root:root@db:3306/prostoretail?allowPublicKeyRetrieval=true&useSSL=false"
+      DATABASE_URL: "mysql://root:root@db:3306/prostoretail"
+      DATABASE_USER: "root"
+      DATABASE_PASSWORD: "root"
+      DATABASE_NAME: "prostoretail"
+      DATABASE_HOST: "db"
+      DATABASE_PORT: 3306
+    depends_on:
+      - db
+
+volumes:
+  mysql_data:
