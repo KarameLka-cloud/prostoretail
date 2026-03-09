@@ -6,11 +6,15 @@ COPY package*.json ./
 COPY prisma ./prisma/
 
 RUN npm install
-RUN npx prisma generate
+# RUN npx prisma generate
 # RUN npx prisma db pull
 
 # COPY . .
 
 EXPOSE 3001
 
-CMD ["npm", "run", "start:dev"]
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
+
+# CMD ["npm", "run", "start:dev"]
