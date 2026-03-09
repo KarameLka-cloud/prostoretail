@@ -1,5 +1,9 @@
 "use client";
 
+import New from "./_components/New/New";
+import Popular from "./_components/Popular/Popular";
+import Slider from "./_components/Slider/Slider";
+
 // import { useEffect, useState } from "react";
 // import Button from "@/components/ui/Button/Button";
 
@@ -36,18 +40,9 @@ export default function Home() {
 
   return (
     <div>
-      Hello, world!
-      {/* <header>Header page</header>
-      <Button />
-      <main>
-        {loading && <div>Загрузка...</div>}
-        {error && <div>{error}</div>}
-        {posts.length > 0 &&
-          posts.map((post: { id: number; title: string }) => (
-            <p key={post.id}>{post.title}</p>
-          ))}
-      </main>
-      <footer>Footer page</footer> */}
+      <Slider />
+      <Popular />
+      <New />
     </div>
   );
 }

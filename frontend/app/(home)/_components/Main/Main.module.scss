@@ -1,3 +1,5 @@
 .main {
-  background-color: darkgrey;
+  &_content {
+    @extend %content;
+  }
 }

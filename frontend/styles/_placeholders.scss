@@ -1,0 +1,16 @@
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+
+%content {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: $breakpoint-xl;
+}

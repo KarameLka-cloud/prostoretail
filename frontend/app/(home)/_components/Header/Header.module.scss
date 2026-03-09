@@ -1,3 +1,84 @@
 .header {
-  background-color: aquamarine;
+  display: none;
+
+  &_top {
+    background-color: lightgray;
+
+    &__content {
+      @extend %flex-between;
+      @extend %content;
+    }
+
+    &__link:not(:first-child) {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  &_info {
+    background-color: lightcoral;
+
+    &__content {
+      @extend %flex-between;
+      @extend %content;
+    }
+  }
+
+  &_nav {
+    background-color: lightcyan;
+
+    &__content {
+      @extend %flex-between;
+      @extend %content;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: block;
+  }
+}
+
+.header_mobile {
+  position: sticky;
+  top: 0;
+
+  &__content {
+    @extend %content;
+  }
+
+  &__info {
+    @extend %flex-between;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgb(143, 143, 143);
+    background-color: rgba(30, 81, 110, 0.3);
+    backdrop-filter: blur(5px);
+  }
+
+  &__profile {
+    @extend %flex-align;
+  }
+
+  &__logo {
+    display: block;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  &__link {
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-left: 16px;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: none;
+  }
 }
