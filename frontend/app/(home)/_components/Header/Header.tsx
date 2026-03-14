@@ -1,11 +1,6 @@
 import styles from "./Header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import logo_img from "@/public/images/logo.jpeg";
-import search_icon from "@/public/icons/search.svg";
-import basket_icon from "@/public/icons/basket.svg";
-import profile_icon from "@/public/icons/profile.svg";
-import burger_icon from "@/public/icons/burger.svg";
 
 const topLinks = [
   {
@@ -105,7 +100,9 @@ export default function HeaderHome() {
           <div className={styles.header_mobile__info}>
             <Link href="/">
               <Image
-                src={logo_img}
+                src="/images/logo.jpeg"
+                width={110}
+                height={60}
                 alt=""
                 className={styles.header_mobile__logo}
               />
@@ -113,28 +110,36 @@ export default function HeaderHome() {
             <div className={styles.header_mobile__profile}>
               <Link href="" className={styles.header_mobile__link}>
                 <Image
-                  src={search_icon}
+                  src="/icons/search.svg"
+                  width={24}
+                  height={24}
                   alt=""
                   className={styles.header_mobile__icon}
                 />
               </Link>
               <Link href="" className={styles.header_mobile__link}>
                 <Image
-                  src={basket_icon}
+                  src="/icons/basket.svg"
+                  width={24}
+                  height={24}
                   alt=""
                   className={styles.header_mobile__icon}
                 />
               </Link>
               <Link href="" className={styles.header_mobile__link}>
                 <Image
-                  src={profile_icon}
+                  src="/icons/profile.svg"
+                  width={24}
+                  height={24}
                   alt=""
                   className={styles.header_mobile__icon}
                 />
               </Link>
               <Link href="" className={styles.header_mobile__link}>
                 <Image
-                  src={burger_icon}
+                  src="/icons/burger.svg"
+                  width={24}
+                  height={24}
                   alt=""
                   className={styles.header_mobile__icon}
                 />

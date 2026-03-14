@@ -60,22 +60,12 @@
   }
 
   &__logo {
-    display: block;
-    height: 60px;
-    width: auto;
     border-radius: 10px;
   }
 
   &__link {
     display: block;
-    height: 24px;
-    width: 24px;
     margin-left: 16px;
-  }
-
-  &__icon {
-    height: 100%;
-    width: 100%;
   }
 
   @media screen and (min-width: $breakpoint-sm) {
